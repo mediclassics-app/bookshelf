@@ -1,0 +1,49 @@
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-142523248-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+<div id="download"></div>
+
+<script>
+
+(function(){
+
+    function getQueryStringValue (key) {
+      return decodeURIComponent( window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1" ) );
+    }
+
+    var booktype = getQueryStringValue("booktype")
+    var filetype = getQueryStringValue("filetype")
+
+    var bookfile = "book." + filetype
+    var redirect_path = "/bookshelf/books/" + booktype + "/siguisimgam/" + bookfile
+
+    console.log( redirect_path )
+
+    newlink = document.createElement('a');
+    newlink.setAttribute('href', redirect_path );
+    newlink.setAttribute('download', "siguisimgam." + filetype );
+    newlink.click()
+
+    window.history.back();
+    // Simulate a mouse click:
+    // window.location.href = "http://www.w3schools.com";
+    // Simulate an HTTP redirect:
+    // window.location.replace( redirect_path );
+
+})();
+
+</script>

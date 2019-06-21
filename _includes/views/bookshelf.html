@@ -1,0 +1,80 @@
+<!-- Page Content -->
+<!-- http://stackoverflow.com/questions/25864169/need-html-css-styling-for-book-shelf -->
+<link href="{{site.baseurl}}/assets/css/ebookshelf.css" rel="stylesheet">
+
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">{{ page.title }}
+			<small>{{ page.subtitle }}</small>
+		</h1>
+	</div>
+</div>
+
+<div class="container">
+
+
+{% assign booklist = site.data[page.variables.type] | where: "category", page.variables.target_category %}
+
+{% assign ir = booklist.size | divided_by: 6 | plus: 0 %}
+
+	{% for i in (0..ir) %}
+
+	<div class="row">
+
+		{% for k in (0..2) %}
+
+		{% assign q = i | times: 6 | plus: k %}
+		{% assign book = booklist[q] %}
+
+		<!-- 1st -->
+
+		{% if book %}
+		{% assign bookpath = site.baseurl | append: "/books/" | append: page.variables.type | append: "/" | append: book.bookid %}
+
+		<div class="col-xs-4 col-md-2">
+
+				<a href="{{site.baseurl}}/preview/{{ book.bookid }}" target="_blank">
+						<img
+								src="{{ bookpath }}/{{ site.data.theme.filename.cover }}"
+								class="img-responsive book"
+								alt="{{ book.title }} {{ book.publisher }} {{ book.category }}">
+				</a>
+
+		</div>
+		{% endif %}
+
+		{% endfor %}
+
+		<div class="col-xs-12 shelf hidden-md hidden-lg"></div>
+
+		<!-- 2nd -->
+
+		{% for j in (3..5) %}
+
+		{% assign p = i | times: 6 | plus: j %}
+		{% assign book = booklist[p] %}
+
+		{% if book %}
+		{% assign bookpath = site.baseurl | append: "/books/" | append: page.variables.type | append: "/" | append: book.bookid %}
+
+		<div class="col-xs-4 col-md-2">
+
+				<a href="{{site.baseurl}}/preview/{{ book.bookid }}" target="_blank">
+						<img
+								src="{{ bookpath }}/{{ site.data.theme.filename.cover }}"
+								class="img-responsive book"
+								alt="{{ book.title }} {{ book.publisher }} {{ book.category }}">
+				</a>
+
+		</div>
+		{% endif %}
+
+		{% endfor %}
+
+		<div class="col-xs-12 shelf"></div>
+
+
+	</div>
+	{% endfor %}
+
+</div>

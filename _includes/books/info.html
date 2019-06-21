@@ -1,0 +1,15 @@
+{% assign bookpath = site.baseurl | append: "/books/" | append: booktype | append: "/" | append: page.bookid %}
+{% assign downloadpath = site.baseurl | append: "/download/" | append: page.bookid %}
+
+<h2>{{ page.title }}</h2>
+
+
+<img
+    src="{{ bookpath }}/{{ site.data.theme.filename.cover }}"
+    class="img-responsive book"
+    alt="{{ page.title }} {{ page.publisher }} {{ page.category }}">
+
+
+<p>Publish Date : {{ page.publishDate }}</p>
+<p>Publisher : {{ page.publisher }}</p>
+<p>Category : {{ page.category }}</p>

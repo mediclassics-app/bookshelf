@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://info.mediclassics.kr/sitemap.xml

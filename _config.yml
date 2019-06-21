@@ -1,0 +1,64 @@
+# General Jekyll Config
+highlighter: rouge
+url: https://mediclassics-app.github.io
+lsi: false
+exclude: [ LICENSE, README.md, .gitignore, Gemfile, Gemfile.lock, readme.md ]
+
+# Site Settings
+baseurl:            "/bookshelf" # Base URL must end WITHOUT a slash, default: ""
+timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Build settings
+host: localhost
+port: 8384
+
+destination: "docs"
+
+# ref : https://jekyllrb.com/docs/collections/
+# collections:
+#   contents:
+#         output: true
+#         permalink:  /:collection/:path
+#         author: host
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# page_generator
+
+page_gen-dirs: false
+
+page_gen:
+  # Info page
+  - data: 'eBook'
+    template: 'eBook'
+    name: 'bookid'
+    dir: 'preview'
+
+  - data: 'distBook'
+    template: 'distBook'
+    name: 'bookid'
+    dir: 'preview'
+
+  - data: 'paperBook'
+    template: 'paperBook'
+    name: 'bookid'
+    dir: 'preview'
+
+  # Download page
+  - data: 'eBook'
+    template: 'download'
+    name: 'bookid'
+    dir: 'download'
+
+  - data: 'distBook'
+    template: 'download'
+    name: 'bookid'
+    dir: 'download'
+
+  # - data: 'paperBook'
+  #   template: 'paperBook'
+  #   name: 'bookid'
+  #   dir: 'preview'
