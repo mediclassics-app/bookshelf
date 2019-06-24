@@ -35,17 +35,17 @@ page_gen:
   - data: 'eBook'
     template: 'page_gen/eBook'
     name: 'bookid'
-    dir: 'preview'
+    dir: 'books'
 
   - data: 'distBook'
     template: 'page_gen/distBook'
     name: 'bookid'
-    dir: 'preview'
+    dir: 'books'
 
   - data: 'paperBook'
     template: 'page_gen/paperBook'
     name: 'bookid'
-    dir: 'preview'
+    dir: 'books'
 
   # Download page
   - data: 'eBook'

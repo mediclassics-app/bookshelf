@@ -8,6 +8,8 @@
 
 `_data/distBook.yml`, `_data/eBook.yml`, `_data/paperBook.yml` 가운데 알맞은 파일에 원하는 서적의 정보를 추가한다.
 
+이때 bookid는 서적의 주소가 되므로 영문과 숫자로 정한다. 
+
 #### 서적 파일 추가
 
 `books/distBook`, `books/eBook`, `books/paperBook` 가운데 알맞은 폴더 아래 bookid와 동일한 폴더를 만든다. 그런 다음 아래 파일을 추가한다. 이때 파일 이름을 아래와 같이 맞춰 주어야 한다.

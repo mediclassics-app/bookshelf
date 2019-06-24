@@ -42,7 +42,8 @@
 <div class="row">
     <div class="col-md-12">
 
-
+      {% assign abstract_file = page.type | append: "/" | append: page.bookid | append: "/" | append: site.data.theme.filename.abstract %}
+      {% include_relative {{ abstract_file }} %}
 
   </div>
 </div>
