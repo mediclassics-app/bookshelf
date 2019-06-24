@@ -8,7 +8,7 @@
 
 `_data/distBook.yml`, `_data/eBook.yml`, `_data/paperBook.yml` 가운데 알맞은 파일에 원하는 서적의 정보를 추가한다.
 
-이때 bookid는 서적의 주소가 되므로 영문과 숫자로 정한다. 
+이때 bookid는 서적의 주소가 되므로 영문과 숫자로 정한다.
 
 #### 서적 파일 추가
 
@@ -16,6 +16,7 @@
 
 * 책의 표지 : `cover_small.png`
 * 배포할 책의 파일 : `book.epub`, `book.pdf`
+
 
 ### 서적이 삭제되거나 변경된 경우
 
