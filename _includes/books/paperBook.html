@@ -1,13 +1,1 @@
-{% assign booktype = "paperBook" %}
-{% include books/info.html %}
-
-{% for link in page.link %}
-
-<a target="_blank"
-  class="btn btn-primary"
-  href="{{ link }}">
-    {{ "link" | upcase }}
-        <span class="glyphicon glyphicon-chevron-right"></span>
-</a>
-
-{% endfor %}
+{% include views/linkButton.html %}

@@ -1,0 +1,16 @@
+<h3>구입하기</h3>
+
+<div id="link-btn">
+
+{% for link in page.link %}
+
+<a target="_blank"
+  class="btn btn-primary"
+  href="{{ link }}">
+    {{ "link" | upcase }}
+        <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+
+{% endfor %}
+
+</div>

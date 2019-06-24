@@ -1,0 +1,26 @@
+<h3>다운로드</h3>
+<div class="checkbox">
+<label>
+    <input type="checkbox" value=true id="user-accept">
+        <a href="{{ site.baseurl }}/{{ site.data.theme.pagename.terms_of_service }}" target="_blank">
+          이용약관<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+        </a>을 읽었으며 이에 동의합니다.
+</label>
+</div>
+
+<div id="download-btn">
+
+{% for fileext in page.files %}
+{% assign bookfile = site.data.theme.filename.book | append: "." | append: fileext %}
+
+<a
+  class="btn btn-primary disabled"
+  href="{{ downloadpath }}?filetype={{ fileext }}&booktype={{ page.type }}">
+    {{ fileext | upcase }}
+        <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+
+{% endfor %}
+</div>
+
+{% include scripts/terms_of_service.html %}

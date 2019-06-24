@@ -1,15 +1,1 @@
-{% assign booktype = "eBook" %}
-{% include books/info.html %}
-
-{% for fileext in page.files %}
-
-{% assign bookfile = site.data.theme.filename.book | append: "." | append: fileext %}
-
-<a 
-  class="btn btn-primary"
-  href="{{ downloadpath }}?filetype={{ fileext }}&booktype={{ booktype }}">
-    {{ fileext | upcase }}
-        <span class="glyphicon glyphicon-chevron-right"></span>
-</a>
-
-{% endfor %}
+{% include views/downloadButton.html %}

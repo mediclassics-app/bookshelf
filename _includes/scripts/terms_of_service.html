@@ -1,0 +1,34 @@
+<script>
+
+(function(){
+
+document.getElementById("user-accept").checked = false;
+
+var userAccept = document.getElementById("user-accept");
+
+userAccept.addEventListener("click", applyBtn );
+
+function applyBtn(){
+
+    var btns = document.getElementsByClassName("btn")
+    var btn_len = btns.length
+    console.log( btns )
+
+    var isChecked = document.getElementById("user-accept").checked;
+    console.log( isChecked )
+
+    if ( isChecked == true ){
+        for ( var i=0 ; i < btn_len ; i++){
+            btns[i].classList.remove('disabled')
+        }
+    } else {
+        for ( var i=0 ; i < btn_len ; i++){
+            btns[i].classList.add('disabled')
+        }
+    }
+
+}
+
+
+})();
+</script>

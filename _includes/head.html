@@ -28,4 +28,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+  {% if page.analytics_type == "download" %}
+      {% include scripts/analytics.download.html %}
+  {% else %}
+      {% include scripts/analytics.html %}
+  {% endif %}
+
 </head>

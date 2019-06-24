@@ -19,3 +19,7 @@ google_analytics_download_key: UA-142523248-3
 filename:
   cover: "cover_small.png"
   book: book
+  abstract: abstract.md
+
+pagename:
+  terms_of_service: terms_of_service

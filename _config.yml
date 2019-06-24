@@ -2,7 +2,7 @@
 highlighter: rouge
 url: https://mediclassics-app.github.io
 lsi: false
-exclude: [ LICENSE, README.md, .gitignore, Gemfile, Gemfile.lock, readme.md ]
+exclude: [ .gitignore, Gemfile, Gemfile.lock, LICENSE, README.md, jekyll.serve, jekyll.build ]
 
 # Site Settings
 baseurl:            "/bookshelf" # Base URL must end WITHOUT a slash, default: ""
@@ -33,32 +33,32 @@ page_gen-dirs: false
 page_gen:
   # Info page
   - data: 'eBook'
-    template: 'eBook'
+    template: 'page_gen/eBook'
     name: 'bookid'
     dir: 'preview'
 
   - data: 'distBook'
-    template: 'distBook'
+    template: 'page_gen/distBook'
     name: 'bookid'
     dir: 'preview'
 
   - data: 'paperBook'
-    template: 'paperBook'
+    template: 'page_gen/paperBook'
     name: 'bookid'
     dir: 'preview'
 
   # Download page
   - data: 'eBook'
-    template: 'download'
+    template: 'page_gen/download'
     name: 'bookid'
     dir: 'download'
 
   - data: 'distBook'
-    template: 'download'
+    template: 'page_gen/download'
     name: 'bookid'
     dir: 'download'
 
   # - data: 'paperBook'
-  #   template: 'paperBook'
+  #   template: 'page_gen/download'
   #   name: 'bookid'
-  #   dir: 'preview'
+  #   dir: 'download'

@@ -1,0 +1,82 @@
+---
+layout: default
+analytics_type: download
+---
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">파일이 다운로드 됩니다.
+            <small>{{ "" }}</small>
+        </h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <h3>감사합니다.</h3>
+
+        <p>파일이 다운로드 되지 않았다면 <a class="" id="download"><kbd>여기</kbd></a>를 눌러 수동으로 다운로드 하실 수 있습니다. </p>
+
+        <br>
+
+        <button class="btn btn-success" id="go-back">
+            이전 페이지로
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </button>
+
+        <a class="btn btn-success" href="{{site.baseurl}}/">
+            메인 페이지로
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+        <a class="btn btn-success" href="/">
+            프로젝트 페이지로
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+(function(){
+
+    function getQueryStringValue (key) {
+      return decodeURIComponent( window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1" ) );
+    }
+
+    var booktype = getQueryStringValue("booktype")
+    var filetype = getQueryStringValue("filetype")
+
+    var bookfile = "{{ site.data.theme.filename.book }}." + filetype
+    var redirect_path = "{{ site.baseurl }}/books/" + booktype + "/{{ page.bookid }}/" + bookfile
+
+    console.log( redirect_path )
+
+    // var newlink = document.createElement('a');
+    var downloadlink = document.getElementById("download")
+    downloadlink.setAttribute('href', redirect_path );
+    downloadlink.setAttribute('download', "{{ page.bookid }}." + filetype );
+    downloadlink.click()
+
+    function goBack(){
+        window.history.back();
+    }
+
+
+    document.getElementById("go-back").addEventListener("click", goBack);
+
+    // Simulate a mouse click:
+    // window.location.href = "http://www.w3schools.com";
+    // Simulate an HTTP redirect:
+    // window.location.replace( redirect_path );
+
+})();
+
+</script>
