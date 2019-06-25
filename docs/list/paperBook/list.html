@@ -114,6 +114,8 @@
 		<thead class="thead-default">
 			<tr>
 				<th>제목</th>
+				<th>출간일</th>
+				<th>다운로드</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -121,32 +123,64 @@
 			<tr>
 				<td>
 					<a class="" href="/bookshelf/books/shkhb" target="_blank">
-						상한경험방
+							상한경험방
 					</a>
+				</td>
+				<td>
+							2016년 12월 05일
+				</td>
+				<td>
+						<span class="badge downloadCount" id="shkhb">
+
+						</span>
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
 					<a class="" href="/bookshelf/books/mykhb" target="_blank">
-						명의경험방
+							명의경험방
 					</a>
+				</td>
+				<td>
+							2016년 12월 05일
+				</td>
+				<td>
+						<span class="badge downloadCount" id="mykhb">
+
+						</span>
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
 					<a class="" href="/bookshelf/books/kbsp" target="_blank">
-						경보신편
+							경보신편
 					</a>
+				</td>
+				<td>
+							2017년 06월 30일
+				</td>
+				<td>
+						<span class="badge downloadCount" id="kbsp">
+
+						</span>
 				</td>
 			</tr>
 			
 			<tr>
 				<td>
 					<a class="" href="/bookshelf/books/dybg_origin" target="_blank">
-						내손안에동의보감 원문강독편
+							내손안에동의보감 원문강독편
 					</a>
+				</td>
+				<td>
+							2017년 12월 08일
+				</td>
+				<td>
+						<span class="badge downloadCount" id="dybg_origin">
+
+						</span>
 				</td>
 			</tr>
 			
@@ -156,6 +190,51 @@
 	</div>
 
 </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+
+<script src="/bookshelf/assets/js/firebase.init.js"></script>
+
+<script>
+(function(){
+
+		var bookbg = document.getElementsByClassName("downloadCount")
+		var len = bookbg.length
+
+		for ( var i=0 ; i < len ; i ++){
+				bookbg[i].innerHTML = 0;
+		}
+
+})()
+
+function updateBg( id, value ){
+		var tbg = document.getElementById( id )
+		if( tbg){
+				tbg.innerHTML = value
+		}
+}
+
+var db = firebase.firestore();
+
+// https://firebase.google.com/docs/firestore/query-data/get-data?authuser=0#get_all_documents_in_a_collection
+
+db.collection("books").get().then( function( querySnapshot ) {
+    querySnapshot.forEach(function(doc) {
+				console.log(doc.id, " => ", doc.data());
+				updateBg( doc.id, doc.data().c )
+    });
+
+}).catch(function(error) {
+    console.log("Error getting document:", error);
+});
+
+
+
+
+</script>
 
 
 				<hr>

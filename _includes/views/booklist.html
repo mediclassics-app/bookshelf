@@ -16,6 +16,8 @@
 		<thead  class="thead-default">
 			<tr>
 				<th>제목</th>
+				<th>출간일</th>
+				<th>다운로드</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -23,8 +25,16 @@
 			<tr>
 				<td>
 					<a class="" href="{{ site.baseurl }}/books/{{ book.bookid }}" target="_blank">
-						{{ book.title }}
+							{{ book.title }}
 					</a>
+				</td>
+				<td>
+							{{ book.publishDate }}
+				</td>
+				<td>
+						<span class="badge downloadCount" id="{{ book.bookid }}">
+
+						</span>
 				</td>
 			</tr>
 			{% endfor %}
@@ -34,3 +44,46 @@
 	</div>
 
 </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+<script src="{{site.baseurl}}/assets/js/firebase.init.js"></script>
+
+<script>
+(function(){
+
+		var bookbg = document.getElementsByClassName("downloadCount")
+		var len = bookbg.length
+
+		for ( var i=0 ; i < len ; i ++){
+				bookbg[i].innerHTML = 0;
+		}
+
+})()
+
+function updateBg( id, value ){
+		var tbg = document.getElementById( id )
+		if( tbg){
+				tbg.innerHTML = value
+		}
+}
+
+var db = firebase.firestore();
+
+// https://firebase.google.com/docs/firestore/query-data/get-data?authuser=0#get_all_documents_in_a_collection
+
+db.collection("books").get().then( function( querySnapshot ) {
+    querySnapshot.forEach(function(doc) {
+				console.log(doc.id, " => ", doc.data());
+				updateBg( doc.id, doc.data().c )
+    });
+
+}).catch(function(error) {
+    console.log("Error getting document:", error);
+});
+
+
+
+
+</script>
