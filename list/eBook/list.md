@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "전체 eBook list"
+title: "고전한의번역서 eBook"
 description: "eBook list"
 ---
 
-{% include views/eBooklist.html %}
+{% include views/booklist.html booklist=site.data.eBook %}

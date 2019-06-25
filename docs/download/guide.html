@@ -132,10 +132,35 @@
 </div>
 
 
-
-
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+<script src="/bookshelf/assets/js/firebase.init.js"></script>
 
 <script>
+
+    var db = firebase.firestore();
+    var docRef = db.collection("books").doc( "guide" )
+
+    // https://firebase.google.com/docs/firestore/query-data/get-data?authuser=0#get_a_document
+
+    docRef.get().then(function( doc ) {
+        if (doc.exists) {
+            var lastdata = doc.data();
+            console.log("Document data:", lastdata);
+            docRef.update( {'c': lastdata.c + 1 })
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+            console.log( doc )
+            docRef.set( { 'c': 1 } )
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
+
+
+
 
 (function(){
 
@@ -168,6 +193,7 @@
     // window.location.href = "http://www.w3schools.com";
     // Simulate an HTTP redirect:
     // window.location.replace( redirect_path );
+
 
 })();
 
