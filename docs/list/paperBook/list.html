@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="한국한의학연구원 고문헌팀 | KIOM ">
-    <meta name="description" content="고문헌 mediclassics mediclassics.kr mediclassics.org paperBook list">
+    <meta name="description" content="한의학 고문헌 이북 책 연구서 ebook mediclassics mediclassics.kr mediclassics.org paperBook list">
+    <meta name="keywords" content="발간서 (판매)">
 
 	<title>발간서 (판매) | 한의학 고문헌 Bookshelf</title>
 
@@ -115,7 +116,7 @@
 			<tr>
 				<th>제목</th>
 				<th>출간일</th>
-				<th>다운로드</th>
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -129,11 +130,7 @@
 				<td>
 							2016년 12월 05일
 				</td>
-				<td>
-						<span class="badge downloadCount" id="shkhb">
-
-						</span>
-				</td>
+				
 			</tr>
 			
 			<tr>
@@ -145,11 +142,7 @@
 				<td>
 							2016년 12월 05일
 				</td>
-				<td>
-						<span class="badge downloadCount" id="mykhb">
-
-						</span>
-				</td>
+				
 			</tr>
 			
 			<tr>
@@ -161,11 +154,7 @@
 				<td>
 							2017년 06월 30일
 				</td>
-				<td>
-						<span class="badge downloadCount" id="kbsp">
-
-						</span>
-				</td>
+				
 			</tr>
 			
 			<tr>
@@ -177,11 +166,7 @@
 				<td>
 							2017년 12월 08일
 				</td>
-				<td>
-						<span class="badge downloadCount" id="dybg_origin">
-
-						</span>
-				</td>
+				
 			</tr>
 			
 		</tbody>
@@ -190,51 +175,6 @@
 	</div>
 
 </div>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
-
-<script src="/bookshelf/assets/js/firebase.init.js"></script>
-
-<script>
-(function(){
-
-		var bookbg = document.getElementsByClassName("downloadCount")
-		var len = bookbg.length
-
-		for ( var i=0 ; i < len ; i ++){
-				bookbg[i].innerHTML = 0;
-		}
-
-})()
-
-function updateBg( id, value ){
-		var tbg = document.getElementById( id )
-		if( tbg){
-				tbg.innerHTML = value
-		}
-}
-
-var db = firebase.firestore();
-
-// https://firebase.google.com/docs/firestore/query-data/get-data?authuser=0#get_all_documents_in_a_collection
-
-db.collection("books").get().then( function( querySnapshot ) {
-    querySnapshot.forEach(function(doc) {
-				console.log(doc.id, " => ", doc.data());
-				updateBg( doc.id, doc.data().c )
-    });
-
-}).catch(function(error) {
-    console.log("Error getting document:", error);
-});
-
-
-
-
-</script>
 
 
 				<hr>
