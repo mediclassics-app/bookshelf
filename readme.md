@@ -42,6 +42,8 @@ bundle exe jekyll build
 
 then, `git` `commit` and `push`
 
+build 결과는 `docs` folder 아래 저장됨.
+
 ## development
 
 If you want to test pages, you can run this command
