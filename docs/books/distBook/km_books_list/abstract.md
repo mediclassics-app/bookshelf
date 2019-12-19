@@ -1,4 +1,4 @@
-▶️ 한국의학사료총서 목록 (PDF 다운로드 - https://info.mediclassics.kr)
+▶️ 한국의학사료총서 목록 (PDF 다운로드 - [https://info.mediclassics.kr](https://info.mediclassics.kr))
 
 1. 박훈평 편저. 일제강점기 의생 총목록1 (영년의생). 한국한의학연구원. 2017.
 2. 박훈평 편저. 일제강점기 의생 총목록2 (한년의생-상). 한국한의학연구원. 2017.

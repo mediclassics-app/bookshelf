@@ -39,11 +39,12 @@
 
 <hr>
 
+{% assign abstract_file = page.type | append: "/" | append: page.bookid | append: "/" | append: site.data.theme.filename.abstract %}
+{%- capture info -%}{% include_relative {{ abstract_file }} %}{%- endcapture -%}
+
 <div class="row">
-    <div class="col-md-12">
-
-      {% assign abstract_file = page.type | append: "/" | append: page.bookid | append: "/" | append: site.data.theme.filename.abstract %}
-      {% include_relative {{ abstract_file }} %}
-
-  </div>
+  <div class="col-md-12">
+    <div markdown="1">{{ info | markdownify }}</div>
 </div>
+</div>
+
