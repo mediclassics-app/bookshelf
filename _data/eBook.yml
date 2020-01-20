@@ -204,3 +204,10 @@
   publisher: KIOM
   files: [ epub, pdf ]
   category: 고유의서
+
+- publishDate: 2019년 12월 13일
+  title: 두창경험방
+  bookid: duchang
+  publisher: KIOM
+  files: [ epub, pdf ]
+  category: 고유의서
