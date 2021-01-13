@@ -7,6 +7,8 @@ exclude: [ .gitignore, Gemfile, Gemfile.lock, LICENSE, README.md, jekyll.serve, 
 # Site Settings
 baseurl:            "/bookshelf" # Base URL must end WITHOUT a slash, default: ""
 timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+title: "한의학 고문헌 서가"
+subtitle: "Mediclassics Bookshelf"
 
 # Build settings
 host: localhost
@@ -15,11 +17,11 @@ port: 8384
 destination: "docs"
 
 # ref : https://jekyllrb.com/docs/collections/
-# collections:
-#   contents:
-#         output: true
-#         permalink:  /:collection/:path
-#         author: host
+collections:
+  board:
+        output: true
+        permalink:  /:collection/:path
+        author: host
 
 plugins:
   - jekyll-seo-tag
