@@ -1,6 +1,6 @@
 # General Jekyll Config
 highlighter: rouge
-url: https://mediclassics-lab.github.io
+url: https://mediclassics-app.github.io
 lsi: false
 exclude: [ .gitignore, Gemfile, Gemfile.lock, LICENSE, README.md, jekyll.serve, jekyll.build ]
 
