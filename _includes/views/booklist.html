@@ -16,7 +16,13 @@
 		<thead  class="thead-default">
 			<tr>
 				<th>제목</th>
+			
+				{% if include.type == "eBook" %}
+				<th>분류</th>
+				{% endif %}
+			
 				<th>출간일</th>
+				
 				{% if include.type != "paperBook" %}
 				<th>다운로드</th>
 				{% endif %}
@@ -26,13 +32,19 @@
 			{% for book in include.booklist %}
 			<tr>
 				<td>
-					<a class="" href="{{ site.baseurl }}/books/{{ book.bookid }}" target="_blank">
-							{{ book.title }}
-					</a>
+					<a class="" href="{{ site.baseurl }}/books/{{ book.bookid }}" target="_blank">{{ book.title }}</a>
 				</td>
+
+				{% if include.type == "eBook" %}
 				<td>
-							{{ book.publishDate }}
+					{{ book.category }}
 				</td>
+				{% endif %}
+
+				<td>
+					{{ book.publishDate }}
+				</td>
+
 				{% if include.type != "paperBook" %}
 				<td>
 					<span class="badge downloadCount" id="{{ book.bookid }}"></span>
