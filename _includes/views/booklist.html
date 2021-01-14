@@ -1,5 +1,7 @@
 <link href="{{site.baseurl}}/assets/css/table.css" rel="stylesheet">
 
+{% assign booklist = include.booklist | sort: "title" %}
+
 <div ng-app="mediclassicsInfo" ng-controller="eBooklistCtrl">
 
 	<div class="row">
@@ -29,7 +31,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{% for book in include.booklist %}
+			{% for book in booklist %}
 			<tr>
 				<td>
 					<a class="" href="{{ site.baseurl }}/books/{{ book.bookid }}" target="_blank">{{ book.title }}</a>
