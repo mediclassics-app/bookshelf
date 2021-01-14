@@ -6,12 +6,13 @@
     </div>
 </div>
 
+{% for prj in site.data.main.prj %}
 
-<!-- Project One -->
+<!-- Project -->
 <div class="row">
     <div class="col-md-7">
-        <a href="{{site.baseurl}}/list/eBook/list">
-            <img class="img-responsive" src="assets/img/index01.png" alt="">
+        <a href="{{ prj.link | replace: "BASEURL", site.baseurl }}" target="_blank">
+            <img class="img-responsive" src="{{ prj.img }}" alt="">
         </a>
     </div>
     <div class="col-md-5">
@@ -25,8 +26,14 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
 
-        <a class="btn btn-primary" href="{{site.baseurl}}/list/eBook/식치의서">
-            식치의서 서가
+    <div class="col-md-5">
+        <h3>{{ prj.title }}<small>{{ prj.title2 }}</small></h3>
+        <h4>{{ prj.subtitle }}</h4>
+        <p>{{ prj.desc }}</p>
+        <!-- <div class="btn-group"> -->
+            {% for btn in prj.btns %}
+            <a class="btn btn-primary" href="{{ btn.link | replace: "BASEURL", site.baseurl }}" target="_blank">
+                {{ btn.text }}
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
 
@@ -69,33 +76,5 @@
     </div>
 </div>
 <!-- /.row -->
-
 <hr>
-
-<!-- Project Three -->
-<div class="row">
-    <div class="col-md-7">
-        <a href="{{site.baseurl}}/list/paperBook/list">
-            <img class="img-responsive" src="assets/img/index03.png" alt="">
-        </a>
-    </div>
-
-    <div class="col-md-5">
-        <h3>발간서 <small>발매</small></h3>
-        <h4>국역서 / 다국어 번역서 / 연구서</h4>
-        <p>한국 전통의학 연구에 도움이 되는 서적들을 간행하고 있습니다.</p>
-        <p>온오프라인 서점에서 구입하실 수 있습니다.</p>
-
-        <a class="btn btn-primary" href="{{site.baseurl}}/list/paperBook/정선의안">
-            정선의안시리즈
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-
-        <a class="btn btn-primary" href="{{site.baseurl}}/list/paperBook/기타간행물">
-            기타간행물
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-
-    </div>
-</div>
-<!-- /.row -->
+{% endfor %}
