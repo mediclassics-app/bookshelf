@@ -159,6 +159,41 @@
 #  files: [ pdf ]
 #  category: 고유의서
 
+- publishDate: 2021년 12월 10일
+  title: 양의미
+  bookid: 20211210_yanguimi
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2021년 12월 10일
+  title: 한객치험
+  bookid: 20211210_hangaek
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+#- publishDate: 2021년 12월 10일
+#  title: 경방변증시치
+#  bookid: 20211210_kyungbang
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+
+#- publishDate: 2021년 12월 10일
+#  title: 의종손익부여
+#  bookid: 20211210_sonicbuyeo
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+
+#- publishDate: 2021년 12월 13일
+#  title: 소아약증직결
+#  bookid: 20211213_soayak
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+
 # eBook 식치의서
 #
 - publishDate: 2016년 12월 10일
