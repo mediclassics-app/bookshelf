@@ -2,11 +2,11 @@
 highlighter: rouge
 url: https://mediclassics-app.github.io
 lsi: false
-exclude: [ .gitignore, Gemfile, Gemfile.lock, LICENSE, README.md, jekyll.serve, jekyll.build ]
+exclude: [ "package.json", "src", "node_modules", "vendor/bundle", ".gitignore"," Gemfile", "Gemfile.lock", "LICENSE", "README.md", "jekyll.serve", "jekyll.build", ".ruby-version", ".github" ]
 
 # Site Settings
-baseurl:            "/bookshelf" # Base URL must end WITHOUT a slash, default: ""
-timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+baseurl: "/bookshelf" # Base URL must end WITHOUT a slash, default: ""
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 title: "한의학 고문헌 서가"
 subtitle: "Mediclassics Bookshelf"
 
