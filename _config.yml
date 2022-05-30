@@ -14,7 +14,7 @@ subtitle: "Mediclassics Bookshelf"
 host: localhost
 port: 8384
 
-destination: "docs"
+# destination: "docs"   # github actions 이용으로 폐기
 
 # ref : https://jekyllrb.com/docs/collections/
 collections:
