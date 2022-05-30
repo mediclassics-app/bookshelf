@@ -1,8 +1,18 @@
 source "http://rubygems.org"
 
 # https://pages.github.com/versions/
-gem 'github-pages', group: :jekyll_plugins
 
-gem 'jekyll-seo-tag', group: :jekyll_plugins
-gem 'jekyll-sitemap', group: :jekyll_plugins
-gem 'jekyll-redirect-from', group: :jekyll_plugins
+# _plugin 사용 위해 수정
+# gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll', "3.9.2"
+
+gem 'jekyll-datapage-generator'
+gem 'kramdown-parser-gfm'
+
+group :jekyll_plugins do
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-sitemap'
+    gem 'jekyll-redirect-from'
+end
+
+

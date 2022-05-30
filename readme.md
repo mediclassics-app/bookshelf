@@ -34,25 +34,10 @@
 
 ## deploy
 
-```bash
-# git master branch (bookshelf 폴더애서 bash 해야함)
-bundle exe jekyll build
-# Site located /docs
+아래 명령으로 local에서 오류 확인 후에 단순히 commit & push 하면 됨. 
+
 ```
-
-then, `git` `commit` and `push`
-
-build 결과는 `docs` folder 아래 저장됨.
-
-## development
-
-If you want to test pages, you can run this command
-
-```bash
 bundle exe jekyll serve
-# serve를 하면 build도 됨.
-# git push 하기전에도 결과물을 로컬 브라우저에서 미리 확인 할 수 있음
-#permission 에러가 날 때는 열려있는 파일이나 폴더를 닫고 다시 시도
 ```
 
 ***
@@ -62,3 +47,11 @@ bundle exe jekyll serve
 ```bash
 mogrify -format png **/*.jpg
 ```
+
+***
+
+## Log
+
+2022-05-30
+* Github Actions을 이용하여 배포 과정을 자동화 하였음
+* updated ruby & gem version 
