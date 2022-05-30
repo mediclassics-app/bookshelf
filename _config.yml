@@ -2,7 +2,7 @@
 highlighter: rouge
 url: https://mediclassics-app.github.io
 lsi: false
-exclude: [ "package.json", "src", "node_modules", "vendor/bundle", ".gitignore", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "jekyll.serve", "jekyll.build", ".ruby-version", ".github" ]
+exclude: [ "package.json", "src", "node_modules", "vendor/bundle", ".gitignore", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "jekyll.serve", "jekyll.build", ".ruby-version", ".github", "readme.legacy.md", "readme.md" ]
 
 # Site Settings
 baseurl: "/bookshelf" # Base URL must end WITHOUT a slash, default: ""
