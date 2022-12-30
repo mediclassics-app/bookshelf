@@ -34,7 +34,7 @@
 
 ## deploy
 
-아래 명령으로 local에서 오류 확인 후에 단순히 commit & push 하면 됨. 
+아래 명령으로 local에서 오류 확인 후에 단순히 commit & push 하면 됨.
 
 ```
 bundle exe jekyll serve
@@ -54,4 +54,4 @@ mogrify -format png **/*.jpg
 
 2022-05-30
 * Github Actions을 이용하여 배포 과정을 자동화 하였음
-* updated ruby & gem version 
+* updated ruby & gem version

@@ -187,9 +187,16 @@
 #  files: [ pdf ]
 #  category: 고유의서
 
-#- publishDate: 2021년 12월 13일
-#  title: 소아약증직결
-#  bookid: 20211213_soayak
+- publishDate: 2021년 12월 13일
+  title: 소아약증직결
+  bookid: 20211213_soayak
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+#- publishDate: 2022년 12월 12일
+#  title: 증급유방
+#  bookid: 20221214_jenggub
 #  publisher: KIOM
 #  files: [ pdf ]
 #  category: 고유의서
