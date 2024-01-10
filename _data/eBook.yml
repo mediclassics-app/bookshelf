@@ -201,6 +201,20 @@
 #  files: [ pdf ]
 #  category: 고유의서
 
+- publishDate: 2023년 12월 12일
+  title: 상한치례
+  bookid: 20211213_soayak
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+#- publishDate: 2023년 12월 12일
+#  title: 수민묘전 상
+#  bookid: 20231212_sumin1
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+
 # eBook 식치의서
 #
 - publishDate: 2016년 12월 10일
