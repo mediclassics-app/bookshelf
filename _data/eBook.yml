@@ -110,12 +110,12 @@
   files: [ pdf ]
   category: 고유의서
 
-- publishDate: 2019년 12월 13일
-  title: 방약합편 상
-  bookid: 20191213_bangyak_1
-  publisher: KIOM
-  files: [ pdf ]
-  category: 고유의서
+#- publishDate: 2019년 12월 13일
+#  title: 방약합편 상
+#  bookid: 20191213_bangyak_1
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
 
 - publishDate: 2019년 12월 13일
   title: 두창경험방
@@ -152,12 +152,12 @@
   files: [ pdf ]
   category: 고유의서
 
-- publishDate: 2020년 12월 13일
-  title: 방약합편  하
-  bookid: 20201214_bankyac_2
-  publisher: KIOM
-  files: [ pdf ]
-  category: 고유의서
+#- publishDate: 2020년 12월 13일
+#  title: 방약합편  하
+#  bookid: 20201214_bankyac_2
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
 
 - publishDate: 2021년 12월 10일
   title: 양의미
@@ -211,6 +211,13 @@
 #- publishDate: 2023년 12월 12일
 #  title: 수민묘전 상
 #  bookid: 20231212_sumin1
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+
+#- publishDate: 2019년 - 2020년
+#  title: 방약합편 초간#
+#  bookid: 20231212_sangchi
 #  publisher: KIOM
 #  files: [ pdf ]
 #  category: 고유의서
