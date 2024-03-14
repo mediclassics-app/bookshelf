@@ -180,12 +180,12 @@
 #  files: [ pdf ]
 #  category: 고유의서
 
-#- publishDate: 2021년 12월 10일
-#  title: 의종손익부여
-#  bookid: 20211210_sonicbuyeo
-#  publisher: KIOM
-#  files: [ pdf ]
-#  category: 고유의서
+- publishDate: 2021년 12월 10일
+  title: 의종손익부여
+  bookid: 20211210_sonicbuyeo
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
 
 - publishDate: 2021년 12월 13일
   title: 소아약증직결
