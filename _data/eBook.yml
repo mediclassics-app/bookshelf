@@ -208,12 +208,47 @@
   files: [ pdf ]
   category: 고유의서
 
-#- publishDate: 2023년 12월 12일
-#  title: 수민묘전 상
-#  bookid: 20231212_sumin1
-#  publisher: KIOM
-#  files: [ pdf ]
-#  category: 고유의서
+- publishDate: 2023년 12월 12일
+  title: 수민묘전 상
+  bookid: 20231212_sumin1
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2024년 12월 10일
+  title: 수민묘전 하
+  bookid: 20241210_sumin2
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2024년 12월 10일
+  title: 세의득효방 풍과
+  bookid: 20241210_seui1
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2024년 12월 10일
+  title: 일금방 1
+  bookid: 20241210_ilgm1
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2024년 12월 10일
+  title: 태평혜민화제국방 치제풍
+  bookid: 20241210_hwaje1
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2024년 11월 30일
+  title: 인재직지소아방론
+  bookid: 20241130_injaesoa1
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
 
 #- publishDate: 2019년 - 2020년
 #  title: 방약합편 초간#
