@@ -10,6 +10,8 @@ prj:
         text: 고유의서 서가
       - link: list/eBook/식치의서
         text: 식치의서 서가
+      - link: list/eBook/단행본
+        text: 단행본 서가
       - link: board/ebook-guide
         text: 이용가이드
 
