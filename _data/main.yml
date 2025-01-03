@@ -25,7 +25,7 @@ prj:
       - link: https://goo.gl/forms/8hxyehkPo0SEnG143
         text: 종이책 신청
       - link: list/distBook/단행본
-        text: 단행본 서가
+        text: 단행본
 
   - title: 발간서
     title2: 발매
