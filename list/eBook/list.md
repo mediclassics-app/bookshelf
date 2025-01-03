@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "고전한의번역서 eBook"
+title: "한의학고전국역서 eBook"
 description: "eBook list"
 ---
 
