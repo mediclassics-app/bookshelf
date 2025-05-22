@@ -11,3 +11,7 @@
 	- [링크](https://goo.gl/forms/8hxyehkPo0SEnG143)
 
 ※ 자료의 내용은 무단 전재를 금하며 인용할 경우 반드시 출처를 밝혀주시기 바랍니다.
+
+#### 웹에서도 《조선의 의료 제도》를 만날 수 있습니다.
+
+- [https://joseon.mediclassics.kr/](https://joseon.mediclassics.kr/)
