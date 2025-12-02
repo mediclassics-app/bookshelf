@@ -240,6 +240,13 @@
   files: [ pdf ]
   category: 고유의서
 
+#- publishDate: 2019년 - 2020년
+#  title: 방약합편 초간#
+#  bookid: 20231212_sangchi
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+
 - publishDate: 2021년 12월 10일
   title: 양의미
   bookid: 20211210_yanguimi
@@ -331,9 +338,51 @@
   files: [ pdf ]
   category: 고유의서
 
-#- publishDate: 2019년 - 2020년
-#  title: 방약합편 초간#
-#  bookid: 20231212_sangchi
-#  publisher: KIOM
-#  files: [ pdf ]
-#  category: 고유의서
+- publishDate: 2025년 06월 30일
+  title: 인재직지소아방론2
+  bookid: 20250630_injaesoa2
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2025년 10월 31일
+  title: 의학견능
+  bookid: 20251031_gyoun
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2025년 11월 10일
+  title: 일금방2
+  bookid: 20251110_ilgm2
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2025년 11월 10일
+  title: 수민묘전 잡병편
+  bookid: 20251110_sumin3
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2025년 11월 10일
+  title: 의루원융1
+  bookid: 20251110_yung1
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2025년 11월 15일
+  title: 태평혜민화제국방 치상한
+  bookid: 20251115_hwaje2
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
+
+- publishDate: 2025년 11월 15일
+  title: 세의득효방2
+  bookid: 202511115_seui2
+  publisher: KIOM
+  files: [ pdf ]
+  category: 고유의서
