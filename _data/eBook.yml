@@ -338,6 +338,14 @@
   files: [ pdf ]
   category: 고유의서
 
+<<<<<<< Updated upstream
+#- publishDate: 2019년 - 2020년
+#  title: 방약합편 초간#
+#  bookid: 20231212_sangchi
+#  publisher: KIOM
+#  files: [ pdf ]
+#  category: 고유의서
+=======
 - publishDate: 2025년 06월 30일
   title: 인재직지소아방론2
   bookid: 20250630_injaesoa2
@@ -387,4 +395,82 @@
   files: [ pdf ]
   category: 고유의서
 
+# eBook 식치의서
+#
+- publishDate: 2016년 12월 10일
+  title: 천금식치
+  bookid: 20161210_chungumsik
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
 
+- publishDate: 2017년 12월 11일
+  title: 식료찬요
+  bookid: 20171211_sikryochanyo
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 식감본초
+  bookid: 20180115_sicgamboncho
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 급유방 식치발명
+  bookid: 20180115_sichibal
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 식물본초
+  bookid: 20180115_sicmulboncho
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 식품집
+  bookid: 20180115_sicpoomzip
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 식료본초
+  bookid: 20180115_sicryoboncho
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 식의심감
+  bookid: 20180115_siguisimgam
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 성혜방 식치
+  bookid: 20180115_sunghyebansik
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 야채박록
+  bookid: 20180115_yachaebacroc
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+
+- publishDate: 2018년 01월 15일
+  title: 의학입문 식치문
+  bookid: 20180115_ypmoonsic
+  publisher: KIOM
+  files: [ pdf ]
+  category: 식치의서
+>>>>>>> Stashed changes
